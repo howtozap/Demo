@@ -9,14 +9,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class NaukariFileUpload {
 	static
 	{
-		System.setProperty("webdriver.chrome.driver","./driver/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
 	}
 
-		public static void main(String[] args) throws InterruptedException {
+		public static void main(String[] args) throws Exception  {
 			WebDriver driver=new ChromeDriver();
 			driver.get("https://www.naukri.com/");
 			driver.findElement(By.xpath("//input[@class='err-border']")).click();
-			Thread.sleep(2000);
+			Thread.sleep(5000);
 			driver.findElement(By.xpath("//input[@class='err-border']")).sendKeys("sinhashaan89@gmail.com");
 			//driver.findElement(By.xpath("//input[@placeholder='Enter your password']")).sendKeys("03241265208");
 			Thread.sleep(2000);
