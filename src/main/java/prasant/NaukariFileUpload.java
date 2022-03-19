@@ -32,6 +32,10 @@ public class NaukariFileUpload {
 			
 			
 		}
+	
+	   static void myMethod() {
+    			// code to be executed
+  		}
 
 	}
 
