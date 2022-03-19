@@ -24,10 +24,12 @@ public class NaukariFileUpload {
 			Thread.sleep(4000);
 			driver.findElement(By.xpath("//a[.='ADD DETAILS']")).click();
 			driver.get("https://www.naukri.com/mnjuser/profile?id=&orgn=homepage");
-			
 			File f=new File("./data/Resume.docx");
 			String apath=f.getAbsolutePath();
 			driver.findElement(By.xpath("//input[@value='Upload Resume']")).sendKeys("apath");
+			driver.findElement(By.xpath("dfghj"));
+			
+			driver.close();
 		
 	
 	
